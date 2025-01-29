@@ -1,0 +1,22 @@
+[
+  {
+    "text": "Resume",
+    "url": "",
+    "btnColor": "is-link",
+    "home": true
+  },
+  {
+    "text": "GitHub",
+    "url": "https://github.com/zsotroav",
+    "icon": "fa-github",
+    "btnColor": "is-dark",
+    "home": true
+  },
+  {
+    "text": "LinkedIn",
+    "url": "https://www.linkedin.com/in/zsombor-torok/",
+    "icon": "fa-linkedin",
+    "btnColor": "is-linkedin",
+    "home": true
+  }
+]

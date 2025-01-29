@@ -1,0 +1,49 @@
+---
+title: zsotroav.dev - portfolio
+description: zsotroav's portfolio
+layout: layouts/base.njk
+---
+
+{%- css %}{% include "node_modules/typer-js/dist/typer.min.css" %}{% endcss %}
+{%- js %}{% include "node_modules/typer-js/dist/typer.min.js" %}{% endjs %}
+
+<section class="hero is-highlight is-fullheight-with-navbar">
+  <div class="container hero-body">
+    <div class="columns w-100">
+      <div class="column is-half">
+        <p class="is-family-monospaced is-size-1 title">Hi, I'm zsotroav,</p>
+        <p class="is-size-2 subtitle">a<sapn id="whatami"></span></p>
+        <div class="field is-grouped">
+          
+          {%- for entry in links %}{% if entry.home %}
+            <p class="control">
+              <button class="button {{entry.btnColor}}" 
+                {% if entry.url %} onclick="window.open('{{entry.url}}', '_blank').focus()" {% else %} disabled {% endif %}
+              >
+                {% if entry.icon %} <span class="icon"><i class="fab {{entry.icon}}"></i></span> {% endif %}
+                {% if entry.text %} <span>{{entry.text}}</span>{% endif %}
+              </button>
+            </p>
+          {% endif %}{%- endfor %}
+
+        </div>
+      </div>
+      <div class="column is-half"></div>
+    </div>
+  </div>
+</section>
+
+{{ content | safe }}
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    typer('#whatami').line()
+    {%- for entry in whatami %}
+      .continue("{{entry.title}}")
+      .pause(1500)
+      .back('all')
+      .pause(300)
+    {%- endfor %}
+    .repeat(Infinity, true);
+  });
+</script>

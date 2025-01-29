@@ -1,0 +1,176 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --highlight-col-h: 40;
+    --highlight-col-s: 21%;
+    --highlight-col-l: 95%;
+    --highlight-text-l: 5%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bulma-scheme-main: #111827;
+    --bulma-body-color: #fff;
+
+    --highlight-col-h: 221;
+    --highlight-col-s: 52%;
+    --highlight-col-l: 31%;
+    --highlight-text-l: 100%;
+  }
+}
+
+:root {
+  --linkedin-h: 210;
+  --linkedin-s: 90%;
+  --linkedin-l: 40%;
+  --linkedin-invert-l: 95%;
+  --linkedin-color: hsl(
+    var(--linkedin-h),
+    var(--linkedin-s),
+    var(--linkedin-l)
+  );
+
+  --highlight-col: hsl(
+    var(--highlight-col-h),
+    var(--highlight-col-s),
+    var(--highlight-col-l)
+  );
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 1.25rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+.w-75 {
+  width: 75%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-25 {
+  width: 25%;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+
+.visually-hidden:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+.typer {
+  display: inline;
+}
+
+.button.is-linkedin {
+  --bulma-button-h: var(--linkedin-h);
+  --bulma-button-s: var(--linkedin-s);
+  --bulma-button-l: var(--linkedin-l);
+  --bulma-button-background-l: var(--linkedin-l);
+  --bulma-button-border-l: var(--linkedin-l);
+  --bulma-button-border-width: 0px;
+  --bulma-button-color-l: var(--linkedin-invert-l);
+  --bulma-button-outer-shadow-a: 0;
+}
+.button.is-linkedin:focus-visible,
+.button.is-linkedin.is-focused {
+  --bulma-button-border-width: 1px;
+}
+
+.hero.is-highlight {
+  --bulma-hero-h: var(--highlight-col-h);
+  --bulma-hero-s: var(--highlight-col-s);
+  --bulma-hero-background-l: var(--highlight-col-l);
+  --bulma-hero-color-l: var(--highlight-text-l);
+  background-color: hsl(
+    var(--bulma-hero-h),
+    var(--bulma-hero-s),
+    var(--bulma-hero-background-l)
+  );
+  color: hsl(
+    var(--bulma-hero-h),
+    var(--bulma-hero-s),
+    var(--bulma-hero-color-l)
+  );
+}
+.hero.is-highlight .title {
+  --bulma-title-color: hsl(
+    var(--bulma-hero-h),
+    var(--bulma-hero-s),
+    var(--bulma-hero-color-l)
+  );
+  --bulma-title-strong-color: hsl(
+    var(--bulma-hero-h),
+    var(--bulma-hero-s),
+    var(--bulma-hero-color-l)
+  );
+}
+.hero.is-highlight .subtitle {
+  --bulma-subtitle-color: hsl(
+    var(--bulma-hero-h),
+    var(--bulma-hero-s),
+    var(--bulma-hero-color-l)
+  );
+  --bulma-subtitle-strong-color: hsl(
+    var(--bulma-hero-h),
+    var(--bulma-hero-s),
+    var(--bulma-hero-color-l)
+  );
+}
+
+
+@media screen and (max-width: 768px) {
+  .flexgrid.stack { --cols: 2; }
+}
+
+@media screen and (min-width: 769px) {
+  .flexgrid.stack { --cols: 3; }
+}
+
+@media screen and (min-width: 1024px) {
+  .flexgrid.stack { --cols: 5; }
+}
+
+.flexgrid.stack{
+  --gap: 1.25rem;
+}
+
+.flexgrid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap);
+  margin-bottom: 2em;
+}
+
+.flexgrid .cell {
+  flex-basis: calc(100% / var(--cols) - var(--gap) / var(--cols) * (var(--cols) - 1));
+}
+
+.stack .cell {
+  padding: 1.25rem 1rem;
+  background-color: var(--highlight-col);
+  border-radius: var(--bulma-radius);
+
+  display: flex;
+  align-items: center;
+}
+
+.stack .cell img {
+  height: 3em;
+  margin-right: 1em;
+}

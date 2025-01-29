@@ -1,0 +1,21 @@
+[
+  {
+    "title": " developer",
+    "description": "I make apps and websites for myself and others."
+  },
+  {
+    "title": " student",
+    "description": "I am currently a university student at the Budapest University of Technology and Economics studying Computer Engineering."
+  },
+  {
+    "title": " computer engineer"
+  },
+  {
+    "title": " teacher",
+    "description": "During high school I helped other students learn programming and the usage of Microsoft office, and during University I held laboratories for students of the programming courses. I was responsible for grading the lab and homework of a group of students and helping them learn the basics of programming using the C and C++ languages."
+  },
+  {
+    "title": " climber",
+    "description": "I started rock climbing at around 13 years old and have been doing it ever since. I also worked at a climbing gym where I helped out other climbers with their questions and taught new climbers how to climb and belay safely."
+  }
+]

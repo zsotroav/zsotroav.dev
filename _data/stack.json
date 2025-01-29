@@ -1,0 +1,74 @@
+[
+  {
+    "text": "C",
+    "logo": "vec/c_logo.svg"
+  },
+  {
+    "text": "C++",
+    "logo": "vec/cpp_logo.svg"
+  },
+  {
+    "text": "C#",
+    "logo": "vec/cs_logo.svg"
+  },
+  {
+    "text": "Java",
+    "logo": "vec/java_logo.svg"
+  },
+  {
+    "text": "Python",
+    "logo": "vec/py_logo.svg"
+  },
+  {
+    "text": "HTML",
+    "logo": "vec/html5_logo.svg"
+  },
+  {
+    "text": "CSS",
+    "logo": "vec/css3_logo.svg"
+  },
+  {
+    "text": "JavaScript",
+    "logo": "vec/js_logo.svg"
+  },
+  {
+    "text": "Git",
+    "logo": "vec/git_logo.svg"
+  },
+  {
+    "text": "GitHub",
+    "logo": "vec/github_mark.svg"
+  },
+  {
+    "text": "CMake",
+    "logo": "vec/cmake_logo.svg"
+  },
+  {
+    "text": "PlatformIO",
+    "logo": "vec/pio_logo.svg"
+  },
+  {
+    "text": "MediaWiki",
+    "logo": "vec/mediawiki_medium_logo.svg"
+  },
+  {
+    "text": "Wikitext",
+    "logo": "vec/mediawiki_medium_logo.svg"
+  },
+  {
+    "text": "Windows",
+    "logo": "vec/windows_logo.svg"
+  },
+  {
+    "text": "Linux",
+    "logo": "vec/linux_tux.svg"
+  },
+  {
+    "text": "Raspberry",
+    "logo": "vec/raspi_logo.svg"
+  },
+  {
+    "text": "Arduino",
+    "logo": "vec/arduino_logo.svg"
+  }
+]
