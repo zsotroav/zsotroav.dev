@@ -1,0 +1,8 @@
+<div class="flexgrid stack">
+  {%- for entry in stack %}
+  <div class="cell">
+    {%- if entry.logo %} <img src="{{entry.logo}}" /> {% endif %} {%- if entry.icon %}
+    <span class="icon"><i class="fab {{entry.icon}}"></i></span> {% endif %} {{entry.text}}
+  </div>
+  {%- endfor %}
+</div>
