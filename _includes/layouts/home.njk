@@ -33,7 +33,24 @@ layout: layouts/base.njk
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+
 {{ content | safe }}
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+{% set projectslist = collections.projects | head(-6) %}
+{% set projectslistCounter = projectsCount %}
+{% include "projectlist.njk" %}
+
+  </div>
+</section>
+
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {

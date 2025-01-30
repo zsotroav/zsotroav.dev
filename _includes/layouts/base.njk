@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ metadata.language }}" class="has-navbar-fixed-top">
+<html lang="{{ page.lang }}" class="has-navbar-fixed-top">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
 				aria-label="main navigation"
 				>
 				<div class="navbar-brand">
-					<a class="navbar-item" href="/"> <img src="{{ 'vec/zs.svg' }}" /> ZSOTROAV</a>
+					<a class="navbar-item" href="/"> <img src="{{ '/vec/zs.svg' }}" /> ZSOTROAV</a>
 
 					<a
 						role="button"
@@ -77,13 +77,14 @@
 
 		<footer class="footer">
 			<div class="content has-text-centered">
-				<p>Copyright © zsotroav 2025</p>
-				<p> Made with 
+				<p>{{strings.footer_copyright[page.lang]}}</p>
+				<p> {{strings.footer_made[page.lang]}}
 					<a href="https://11ty.dev">11ty</a>,
-					<a href="https://bulma.io">Bulma</a>, and
+					<a href="https://bulma.io">Bulma</a>{{strings.footer_and[page.lang]}}
 					<span class="icon-text"><span class="icon">
 						<i class="fas fa-heart"></i>
 					</span></span>
+					{{strings.footer_post[page.lang]}}
 				</p>
 			</div>
 		</footer>
