@@ -8,17 +8,16 @@ layout: layouts/home.njk
 
 ## Intró
 
-I am an active Computer Engineering student at the
-**Budapest University of Technology and Economics**. I have
-always been interested in technology; I started learning programming when I was only 12 years old.
-I frequently release my projects as open-source software on GitHub and help others learn
-programming as a teaching assistant at my university.
+Egy aktív Mérnök Informatikus hallgató vagyok a **Budapesti Műszaki Egyetemen**.
+Mindig is érdekel az informatika: 12 éves korom óta tanulok programozni.
+Projektjeimet gyakran adom ki nyílt forráskóddal GitHub-on és segítek másoknak
+is programozást tanulni laborvezető demonstrátorként az egyetemen.
 
 ## Technológiák
 
-I am pretty versatile and can work with a wide range of technologies depending on the project's
-needs and constraints. Bellow is a small list of
-**my most commonly used** technologies and tools:
+Elég sokoldalú vagyok, és a technológiák széles választékával tudok dolgozni, a
+projekt igényeitől és megkötéseitől függően. Az alábbi lista az általam
+**leggyakrabban használt** technológiákat és eszközökek tartalmazza:
 
 {% include "stack.njk" %}
 

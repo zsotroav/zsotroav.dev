@@ -1,21 +1,48 @@
 [
   {
-    "title": " developer",
-    "description": "I make apps and websites for myself and others."
+    "title": {
+      "en": "a developer",
+      "hu": "egy fejlesztő"
+    },
+    "description": {
+      "en": "I make apps and websites for myself and others.",
+      "hu": "Alkalmazásokat és weboldalakat készítek magamnak és másoknak."
+    }
   },
   {
-    "title": " student",
-    "description": "I am currently a university student at the Budapest University of Technology and Economics studying Computer Engineering."
+    "title": {
+      "en": "a student",
+      "hu": "egy diák"
+    },
+    "description": {
+      "en": "I am currently a university student at the Budapest University of Technology and Economics studying Computer Engineering.",
+      "hu": "Jelenleg a Budapesti Műszaki Egyetemen vagyok mérnökinformatikus hallgató."
+    }
   },
   {
-    "title": " computer engineer"
+    "title": {
+      "en": "a computer engineer",
+      "hu": "egy mérnökinformatikus"
+    }
   },
   {
-    "title": " teacher",
-    "description": "During high school I helped other students learn programming and the usage of Microsoft office, and during University I held laboratories for students of the programming courses. I was responsible for grading the lab and homework of a group of students and helping them learn the basics of programming using the C and C++ languages."
+    "title": {
+      "en": "a teacher",
+      "hu": "egy tanár"
+    },
+    "description": {
+      "en": "During high school I helped other students learn programming and the usage of Microsoft Office. During University I held laboratories for students of the programming courses. I was responsible for grading the lab and homework of a group of students and helping them learn the basics of programming using the C language.",
+      "hu": "Gimnázium alatt is segítettem más diákoknak a programozással és a Microsoft Office programok használatával. Egyetem alatt programozás laboratóriumokat tartottam, ahol az én feladatom volt labor csoportok órai és házi feladatainak értékelése és kijavítása, valamint segíteni nekik a programozás alapjainak elsajátítani a C nyelv segítségével."
+    }
   },
   {
-    "title": " climber",
-    "description": "I started rock climbing at around 13 years old and have been doing it ever since. I also worked at a climbing gym where I helped out other climbers with their questions and taught new climbers how to climb and belay safely."
+    "title": {
+      "en": "a climber",
+      "hu": "egy mászó"
+    },
+    "description": {
+      "en": "I started rock climbing at 13 years old and have been doing it ever since. I also worked at a climbing gym where I helped other climbers with their questions and taught new climbers how to climb and belay safely.",
+      "hu": "13 éves korom óta mászom, és egy mászóteremben is dolgoztam, ahol más mászóknak és kezdőknek segítettem a biztonságos mászás és biztosítási technikák megtanulásában és megértésében, valamint a különböző szakmai kérdéseik megválaszolásával."
+    }
   }
 ]

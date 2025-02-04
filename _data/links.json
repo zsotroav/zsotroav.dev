@@ -1,6 +1,9 @@
 [
   {
     "text": "Resume",
+    "i18n": {
+      "hu": "Önéletrajz"
+    },
     "url": "",
     "btnColor": "is-link",
     "home": true
