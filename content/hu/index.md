@@ -19,8 +19,8 @@ Elég sokoldalú vagyok, és a technológiák széles választékával tudok dol
 projekt igényeitől és megkötéseitől függően. Az alábbi lista az általam
 **leggyakrabban használt** technológiákat és eszközökek tartalmazza:
 
-{% include "stack.njk" %}
+{% include "components/stack.njk" %}
 
-## Projects
+## Projektek
 
-{% include "projectlist.njk" %}
+{% include "components/projectlist.njk" %}

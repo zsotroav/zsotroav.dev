@@ -20,8 +20,8 @@ I am pretty versatile and can work with a wide range of technologies depending
 on the project's needs and constraints. Bellow is a small list of **my most
 commonly used** technologies and tools:
 
-{% include "stack.njk" %}
+{% include "components/stack.njk" %}
 
 ## Projects
 
-{% include "projectlist.njk" %}
+{% include "components/projectlist.njk" %}
