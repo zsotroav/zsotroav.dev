@@ -1,21 +1,33 @@
-@media (prefers-color-scheme: light) {
+[data-theme="light"] {
   :root {
     --highlight-col-h: 40;
     --highlight-col-s: 21%;
     --highlight-col-l: 95%;
     --highlight-text-l: 5%;
   }
+
+  .hero {
+    --bulma-hero-h: 0;
+    --bulma-hero-s: 0%;
+    --bulma-hero-background-l: 95%;
+  }
 }
 
-@media (prefers-color-scheme: dark) {
+[data-theme="dark"] {
   :root {
-    --bulma-scheme-main: #111827;
+    --bulma-scheme-main: #252526;
     --bulma-body-color: #fff;
 
-    --highlight-col-h: 221;
-    --highlight-col-s: 52%;
-    --highlight-col-l: 31%;
+    --highlight-col-h: 204;
+    --highlight-col-s: 100%;
+    --highlight-col-l: 40%;
     --highlight-text-l: 100%;
+  }
+
+  .hero {
+    --bulma-hero-h: 0;
+    --bulma-hero-s: 0%;
+    --bulma-hero-background-l: 12%;
   }
 }
 
@@ -57,7 +69,7 @@ h1 {
 }
 
 h2 {
-  color: hsl(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l)) !important;
+  color: #0a5b92 !important;
 
   font-size: 2.5rem;
   font-weight: 400;
@@ -112,10 +124,9 @@ h2 {
   --bulma-button-border-width: 1px;
 }
 
-.hero.is-highlight {
-  --bulma-hero-h: var(--highlight-col-h);
-  --bulma-hero-s: var(--highlight-col-s);
-  --bulma-hero-background-l: var(--highlight-col-l);
+
+
+.hero {
   --bulma-hero-color-l: var(--highlight-text-l);
   background-color: hsl(
     var(--bulma-hero-h),
@@ -128,7 +139,7 @@ h2 {
     var(--bulma-hero-color-l)
   );
 }
-.hero.is-highlight .title {
+.hero .title {
   --bulma-title-color: hsl(
     var(--bulma-hero-h),
     var(--bulma-hero-s),
@@ -140,7 +151,7 @@ h2 {
     var(--bulma-hero-color-l)
   );
 }
-.hero.is-highlight .subtitle {
+.hero .subtitle {
   --bulma-subtitle-color: hsl(
     var(--bulma-hero-h),
     var(--bulma-hero-s),
@@ -185,8 +196,9 @@ h2 {
 
 .stack .cell {
   padding: 1.25rem 1rem;
-  background-color: var(--highlight-col);
+  background-image: linear-gradient(90deg, #114a7a, #0a5b92); 
   border-radius: var(--bulma-radius);
+  color: white;
 
   display: flex;
   align-items: center;
