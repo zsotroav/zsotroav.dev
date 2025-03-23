@@ -177,10 +177,14 @@ h2 {
 
 @media screen and (min-width: 769px) {
   .flexgrid.stack { --cols: 3; }
-  .flexgrid.projectslist { --cols: 2; }
+  .flexgrid.projectslist { --cols: 1; }
 }
 
 @media screen and (min-width: 1024px) {
+  .flexgrid.stack { --cols: 4; }
+  .flexgrid.projectslist { --cols: 2; }
+}
+@media screen and (min-width: 1408px) {
   .flexgrid.stack { --cols: 5; }
   .flexgrid.projectslist { --cols: 3; }
 }
@@ -219,4 +223,17 @@ h2 {
 
 .card.project-card {
   margin-bottom: 0!important;
+}
+
+.card.project-card .card-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+ul {
+  list-style: square;
+  margin-left: 2em;
+  margin-bottom: 0.2lh;
+  line-height: 1.5;
 }

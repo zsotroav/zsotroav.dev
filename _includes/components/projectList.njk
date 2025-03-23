@@ -3,7 +3,7 @@
 
 <div class="flexgrid projectslist my-5">
 {%- for proj in projectslist %}
-
+{%- if page.lang in proj.data.tags %}
 
 <div class="card cell glide-up project-card" id="project-card-{{proj.data.title}}">
 	{%- if proj.img %}
@@ -24,7 +24,13 @@
 
 		{{proj.data.short}}
 	</div>
+	<footer class="card-footer">
+		<a href="{{proj.url}}" class="card-footer-item">{{strings.projlist_read[page.lang]}}</a>
+		{%- if proj.data.source %}<a href="{{proj.data.source}}" class="card-footer-item">{{strings.projlist_source[page.lang]}}</a>{%- endif %}
+		{%- if proj.data.extref %}<a href="{{proj.data.extref}}" class="card-footer-item">{{strings.projlist_ref[page.lang]}}</a>{%- endif %}
+	</footer>
 </div>
 
+{%- endif %}
 {%- endfor %}
 </div>

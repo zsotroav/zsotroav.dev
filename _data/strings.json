@@ -22,5 +22,17 @@
     "footer_post": {
         "en": "",
         "hu": "segítségével."
+    },
+    "projlist_read": {
+        "en": "Read more",
+        "hu": "Elolvasás"
+    },
+    "projlist_source": {
+        "en": "Source code",
+        "hu": "Forráskód"
+    },
+    "projlist_ref": {
+        "en": "See referece",
+        "hu": "Referencia"
     }
 }

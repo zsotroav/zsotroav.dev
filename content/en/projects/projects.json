@@ -1,1 +1,1 @@
-{ "layout": "layouts/projects.njk", "tags": ["projects"] }
+{ "layout": "layouts/project.njk", "tags": ["projects", "en"] }
