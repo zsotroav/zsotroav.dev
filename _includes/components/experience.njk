@@ -1,0 +1,33 @@
+<div class="experience my-5">
+{%- for exp in experience %}
+<div class="card glide-up exp-card" id="exp-card-{{exp.id}}">
+    <div class="card-content">
+        <div class="media">
+            <div class="media-left">
+                <figure class="image is-48x48">
+                <img
+                    src="{{exp.img}}"
+                    alt="{{exp.title[page.lang]}} logo"
+                />
+                </figure>
+            </div>
+            <div class="media-content">
+                <p class="title is-4">{{exp.title[page.lang]}}</p>
+            </div>
+        </div>
+
+        {%- for pos in exp.pos %}
+            <div class="content">
+                <p class="title is-5">{{pos.title[page.lang]}}</p>
+                <p class="subtitle mt-1 is-6">
+                    <time datetime="{{pos.from}}">{{ pos.from }}</time>&nbsp;-&nbsp; 
+                    {%- if pos.to %}<time datetime="{{ pos.to }}">{{ pos.to }}</time>
+                    {%- else %} {{ strings.exp_pos_present[page.lang] }} {%- endif %}
+                </p>
+                <p class="is-6">{{pos.desc[page.lang]}}</p>
+            </div>
+        {%- endfor %}
+    </div>
+</div>
+{%- endfor %}
+</div>

@@ -22,6 +22,10 @@ commonly used** technologies and tools:
 
 {% include "components/stack.njk" %}
 
+## Experience
+
+{% include "components/experience.njk" %}
+
 ## Projects
 
 {% include "components/projectlist.njk" %}

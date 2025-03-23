@@ -21,6 +21,10 @@ projekt igényeitől és megkötéseitől függően. Az alábbi lista az általa
 
 {% include "components/stack.njk" %}
 
+## Tapasztalat
+
+{% include "components/experience.njk" %}
+
 ## Projektek
 
 {% include "components/projectlist.njk" %}
