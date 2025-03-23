@@ -71,10 +71,8 @@
 					</div>
         			<div class="navbar-end">
 						{% set langlinks = page.url | locale_links %}
-						{%- for link in langlinks %}
-						<a class="navbar-item mr-2" href="{{link.url}}" lang="{{link.lang}}" hreflang="{{link.lang}}">{{link.lang}}</a>
-						{%- endfor -%}
-						<a class="navbar-item mr-2" onClick="window.changeTheme()"> <i class="fas fa-sun dark-only"></i> <i class="fas fa-moon light-only"></i><a>
+						{%- for link in langlinks %}<a class="button navbar-item mr-2" href="{{link.url}}" lang="{{link.lang}}" hreflang="{{link.lang}}">{{link.lang}}</a>{%- endfor -%}
+						<a class="button navbar-item mr-2" onClick="window.changeTheme()"> <i class="fas fa-sun dark-only"></i> <i class="fas fa-moon light-only"></i><a>
 					</div>
 				</div>
 			</nav>
