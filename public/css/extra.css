@@ -172,17 +172,20 @@ h2 {
 
 @media screen and (max-width: 768px) {
   .flexgrid.stack { --cols: 2; }
+  .flexgrid.projectslist { --cols: 1; }
 }
 
 @media screen and (min-width: 769px) {
   .flexgrid.stack { --cols: 3; }
+  .flexgrid.projectslist { --cols: 2; }
 }
 
 @media screen and (min-width: 1024px) {
   .flexgrid.stack { --cols: 5; }
+  .flexgrid.projectslist { --cols: 3; }
 }
 
-.flexgrid.stack{
+.flexgrid {
   --gap: 1.25rem;
 }
 
@@ -212,4 +215,8 @@ h2 {
 .stack .cell img {
   height: 3em;
   margin-right: 1em;
+}
+
+.card.project-card {
+  margin-bottom: 0!important;
 }

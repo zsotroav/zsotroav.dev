@@ -1,0 +1,48 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="hero is-halfheight">
+  <div class="container hero-body">
+    <div class="columns w-100">
+      <div class="column is-half">
+        <p class="is-family-monospaced is-size-1 title">{{ title }}</p>
+        <p class="is-size-4 subtitle"><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
+
+        <div class="field is-grouped">
+          
+          {%- for tag in tags | filterTagList %}
+            {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+            <p class="control">
+              <button class="button is-link"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></button>
+            </p>
+          {%- endfor %}
+
+        </div>
+
+        
+        {%- if collections.projects %}
+        {%- set previousPost = collections.projects | getPreviousCollectionItem %}
+        {%- set nextPost = collections.projects | getNextCollectionItem %}
+        {%- if nextPost or previousPost %}
+        <ul class="links-nextprev">
+          {%- if previousPost %}<li class="links-nextprev-prev">← Previous<br> <a href="{{ previousPost.url }}">{{ previousPost.data.title }}</a></li>{% endif %}
+          {%- if nextPost %}<li class="links-nextprev-next">Next →<br><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></li>{% endif %}
+        </ul>
+        {%- endif %}
+        {%- endif %}
+      </div>
+      <div class="column is-half">
+        <img src="{{page.img}}" />
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    {{ content | safe }}
+
+  </div>
+</container>
+

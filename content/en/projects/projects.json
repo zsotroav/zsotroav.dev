@@ -1,1 +1,1 @@
-{ "layout": "layouts/base.njk", "tags": ["projects"] }
+{ "layout": "layouts/projects.njk", "tags": ["projects"] }

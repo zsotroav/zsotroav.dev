@@ -1,13 +1,30 @@
-{%- css %}.projectlist { counter-reset: start-from {{ (projectslistCounter or projectslist.length) + 1 }} }{% endcss %}
-
 {% set projectslist = collections.projects | head(-6) %}
 {% set projectslistCounter = projectsCount %}
 
-<ol reversed class="projectlist">
-{%- for project in projectslist | reverse %}
-	<li class="projectlist-item{% if project.url == url %} projectlist-item-active{% endif %}">
-		<a href="{{ project.url }}" class="projectlist-link">{% if project.data.title %}{{ project.data.title }}{% else %}<code>{{ project.url }}</code>{% endif %}</a>
-		<time class="projectlist-date" datetime="{{ project.date | htmlDateString }}">{{ project.date | readableDate("LLLL yyyy") }}</time>
-	</li>
+<div class="flexgrid projectslist my-5">
+{%- for proj in projectslist %}
+
+
+<div class="card cell glide-up project-card" id="project-card-{{proj.data.title}}">
+	{%- if proj.img %}
+	<div class="card-image">
+		<figure class="image is-4by3">
+		<img
+			src="{{proj.img}}"
+			alt="{{proj.title}} image"
+		/>
+		</figure>
+	</div>
+  	{%- endif %}
+	<div class="card-content">
+		<div class="media-content">
+			<p class="title is-4">{{proj.data.title}}</p>
+			<p class="subtitle is-6"><time datetime="{{ proj.data.date | htmlDateString }}">{{ proj.data.date | readableDate }}</time></p>
+		</div>
+
+		{{proj.data.short}}
+	</div>
+</div>
+
 {%- endfor %}
-</ol>
+</div>
