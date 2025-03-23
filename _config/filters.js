@@ -45,7 +45,7 @@ export default function(eleventyConfig) {
 			this.context?.environments?.collections?.projects ||
 			[];
 
-		const prepped = projects.filter(post => post.page.lang === this.page.lang).sort((a, b) => b.date - a.date);
+		const prepped = projects.filter(post => post.page.lang === this.page.lang).sort((a, b) => a.date - b.date);
 
 		const currentIndex = prepped.findIndex(post => post.page.inputPath === this.page.inputPath);
 

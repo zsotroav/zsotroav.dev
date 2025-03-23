@@ -22,7 +22,7 @@
                 <p class="subtitle mt-1 is-6">
                     <time datetime="{{pos.from}}">{{ pos.from }}</time>&nbsp;-&nbsp; 
                     {%- if pos.to %}<time datetime="{{ pos.to }}">{{ pos.to }}</time>
-                    {%- else %} {{ strings.exp_pos_present[page.lang] }} {%- endif %}
+                    {%- else %}{{ strings.exp_pos_present[page.lang] }}{%- endif %}
                 </p>
                 <p class="is-6">{{pos.desc[page.lang]}}</p>
             </div>

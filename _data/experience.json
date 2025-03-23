@@ -3,13 +3,13 @@
         "id": "KSZK",
         "img": "/img/KSZKReszort.png",
         "title": {
-            "en": "Schönherz Dormitory Computer Science SIG",
+            "en": "Schönherz Dormitory Computer Science Special Interest Group",
             "hu": "Schönherz Kollégiumi Számítástechnikai kör"
         },
         "pos": [
             {
                 "title":{
-                    "en": "Students' Knowledge Group leader",
+                    "en": "Students' Knowledgebase - Group leader",
                     "hu": "Hallgatói Tudásbázis Körvezető"
                 },
 
@@ -26,7 +26,7 @@
                 },
                 "desc": {
                     "en": "As a mentor, my task was to help the next generation of members with their onboarding; teaching them how our systems work and even holding courses and workshops about certain subjects. I also acted as a direct contact if they needed any help.",
-                    "hu": "Képzés mentorként az én feladatom volt az új jelentkezők onboarding folyamatában segíteni; megtanítottam nekik hogyan működnek a rendszereink és tartottam különböző előadásokat és workshopokat ahol kipróbálhatták magukat. Emellett én voltam a közvetlen kapcsolat számukra ha segítségre volt szükségük vagy kérdésük lett volna."
+                    "hu": "Képzés mentorként az én feladatom volt az új jelentkezők onboarding folyamatában segíteni; megtanítottam nekik hogyan működnek a rendszereink és tartottam különböző előadásokat és workshopokat ahol kipróbálhatták magukat. Emellett én voltam a közvetlen kapcsolat számukra, ha segítségre volt szükségük vagy kérdésük lett volna."
                 },
                 "from": "2025-02"
             },
