@@ -13,3 +13,11 @@ function detectColorScheme(){
     document.documentElement.setAttribute("data-theme", theme);
 }
 detectColorScheme();
+
+window.changeTheme = () => {
+    var curr = document.documentElement.getAttribute("data-theme");
+    var next = curr == "light" ? "dark" : "light";
+
+    document.documentElement.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+}

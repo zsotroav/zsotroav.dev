@@ -1,3 +1,6 @@
+{% set otherlang = ('EN' if (page.lang == 'HU') else 'HU') %}
+
+
 <!DOCTYPE html>
 <html lang="{{ page.lang }}" class="has-navbar-fixed-top">
 	<head>
@@ -41,7 +44,7 @@
 			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
 			
 			<nav
-				class="navbar is-fixed-top"
+				class="navbar is-fixed-top p-4"
 				role="navigation"
 				aria-label="main navigation"
 				>
@@ -67,6 +70,13 @@
 							<a class="navbar-item" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
 						{%- endfor %}
 					</div>
+        			<div class="navbar-end">
+						{% set langlinks = page.url | locale_links %}
+						{%- for link in langlinks %}
+						<a class="navbar-item mr-2" href="{{link.url}}" lang="{{link.lang}}" hreflang="{{link.lang}}">{{link.lang}}</a>
+						{%- endfor -%}
+						<a class="navbar-item mr-2" onClick="window.changeTheme()"> <i class="fas fa-sun dark-only"></i> <i class="fas fa-moon light-only"></i><a>
+					</div>
 				</div>
 			</nav>
 		</header>
@@ -87,6 +97,15 @@
 						<i class="fas fa-heart"></i>
 					</span></span>
 					{{strings.footer_post[page.lang]}}
+				</p>
+				<p class="control">
+					{%- for entry in links %}{% if entry.footer %}
+						<button class="button {{entry.btnColor}} mx-2" 
+								{% if entry.url %} onclick="window.open('{{entry.url}}', '_blank').focus()" {% else %} disabled {% endif %}
+							>
+								{% if entry.icon %} <span class="icon"><i class="fab {{entry.icon}}"></i></span> {% endif %}
+						</button>
+					{% endif %}{%- endfor %}
 				</p>
 			</div>
 		</footer>

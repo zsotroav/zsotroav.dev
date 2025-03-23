@@ -11,6 +11,9 @@
     --bulma-hero-s: 0%;
     --bulma-hero-background-l: 95%;
   }
+
+  .dark-only { display: none; }
+
 }
 
 [data-theme="dark"] {
@@ -29,6 +32,8 @@
     --bulma-hero-s: 0%;
     --bulma-hero-background-l: 12%;
   }
+
+  .light-only { display: none; }
 }
 
 :root {
@@ -124,7 +129,7 @@ h2 {
   --bulma-button-border-width: 1px;
 }
 
-
+.is-link a { color: white; }
 
 .hero {
   --bulma-hero-color-l: var(--highlight-text-l);
