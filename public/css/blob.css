@@ -38,6 +38,10 @@
     animation: spinBlob 6s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
   }
   
+  @media screen and (max-width: 768px) {
+    .blob { display: none; }
+  }
+
   @keyframes moveBlob {
     0% {
       transform: translate(-50%, -50%) scale(1) rotate(0deg);
