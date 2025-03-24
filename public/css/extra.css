@@ -1,4 +1,4 @@
-[data-theme="light"] {
+[data-theme='light'] {
   :root {
     --highlight-col-h: 40;
     --highlight-col-s: 21%;
@@ -12,11 +12,12 @@
     --bulma-hero-background-l: 95%;
   }
 
-  .dark-only { display: none; }
-
+  .dark-only {
+    display: none;
+  }
 }
 
-[data-theme="dark"] {
+[data-theme='dark'] {
   :root {
     --bulma-scheme-main: #252526;
     --bulma-body-color: #fff;
@@ -33,7 +34,9 @@
     --bulma-hero-background-l: 12%;
   }
 
-  .light-only { display: none; }
+  .light-only {
+    display: none;
+  }
 }
 
 :root {
@@ -41,17 +44,9 @@
   --linkedin-s: 90%;
   --linkedin-l: 40%;
   --linkedin-invert-l: 95%;
-  --linkedin-color: hsl(
-    var(--linkedin-h),
-    var(--linkedin-s),
-    var(--linkedin-l)
-  );
+  --linkedin-color: hsl(var(--linkedin-h), var(--linkedin-s), var(--linkedin-l));
 
-  --highlight-col: hsl(
-    var(--highlight-col-h),
-    var(--highlight-col-s),
-    var(--highlight-col-l)
-  );
+  --highlight-col: hsl(var(--highlight-col-h), var(--highlight-col-s), var(--highlight-col-l));
 }
 
 p {
@@ -67,7 +62,7 @@ h1 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  
+
   color: #fff;
   font-weight: 800;
   line-height: 1.25;
@@ -83,15 +78,23 @@ h2 {
 
 .w-100 {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .w-75 {
   width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .w-50 {
   width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .w-25 {
   width: 25%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {
@@ -129,27 +132,17 @@ h2 {
   --bulma-button-border-width: 1px;
 }
 
-.is-link a { color: white; }
+.is-link a {
+  color: white;
+}
 
 .hero {
   --bulma-hero-color-l: var(--highlight-text-l);
-  background-color: hsl(
-    var(--bulma-hero-h),
-    var(--bulma-hero-s),
-    var(--bulma-hero-background-l)
-  );
-  color: hsl(
-    var(--bulma-hero-h),
-    var(--bulma-hero-s),
-    var(--bulma-hero-color-l)
-  );
+  background-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-background-l));
+  color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
 }
 .hero .title {
-  --bulma-title-color: hsl(
-    var(--bulma-hero-h),
-    var(--bulma-hero-s),
-    var(--bulma-hero-color-l)
-  );
+  --bulma-title-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-title-strong-color: hsl(
     var(--bulma-hero-h),
     var(--bulma-hero-s),
@@ -157,11 +150,7 @@ h2 {
   );
 }
 .hero .subtitle {
-  --bulma-subtitle-color: hsl(
-    var(--bulma-hero-h),
-    var(--bulma-hero-s),
-    var(--bulma-hero-color-l)
-  );
+  --bulma-subtitle-color: hsl(var(--bulma-hero-h), var(--bulma-hero-s), var(--bulma-hero-color-l));
   --bulma-subtitle-strong-color: hsl(
     var(--bulma-hero-h),
     var(--bulma-hero-s),
@@ -169,24 +158,39 @@ h2 {
   );
 }
 
-
 @media screen and (max-width: 768px) {
-  .flexgrid.stack { --cols: 2; }
-  .flexgrid.projectslist { --cols: 1; }
+  .flexgrid.stack {
+    --cols: 2;
+  }
+  .flexgrid.projectslist {
+    --cols: 1;
+  }
 }
 
 @media screen and (min-width: 769px) {
-  .flexgrid.stack { --cols: 3; }
-  .flexgrid.projectslist { --cols: 1; }
+  .flexgrid.stack {
+    --cols: 3;
+  }
+  .flexgrid.projectslist {
+    --cols: 1;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-  .flexgrid.stack { --cols: 4; }
-  .flexgrid.projectslist { --cols: 2; }
+  .flexgrid.stack {
+    --cols: 4;
+  }
+  .flexgrid.projectslist {
+    --cols: 2;
+  }
 }
 @media screen and (min-width: 1408px) {
-  .flexgrid.stack { --cols: 5; }
-  .flexgrid.projectslist { --cols: 3; }
+  .flexgrid.stack {
+    --cols: 5;
+  }
+  .flexgrid.projectslist {
+    --cols: 3;
+  }
 }
 
 .flexgrid {
@@ -208,7 +212,7 @@ h2 {
 
 .stack .cell {
   padding: 1.25rem 1rem;
-  background-image: linear-gradient(90deg, #114a7a, #0a5b92); 
+  background-image: linear-gradient(90deg, #114a7a, #0a5b92);
   border-radius: var(--bulma-radius);
   color: white;
 
@@ -222,7 +226,7 @@ h2 {
 }
 
 .card.project-card {
-  margin-bottom: 0!important;
+  margin-bottom: 0 !important;
 }
 
 .card.project-card .card-footer {
@@ -237,3 +241,18 @@ ul {
   margin-bottom: 0.2lh;
   line-height: 1.5;
 }
+
+.imgbg {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .imgbg {
+    min-height: 30vh;
+  }
+}
+
+.links-nextprev-next { margin-left: auto; }
+.links-nextprev-prev { margin-right: auto; }
