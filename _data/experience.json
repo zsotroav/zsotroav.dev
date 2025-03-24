@@ -1,7 +1,7 @@
 [
     {
         "id": "KSZK",
-        "img": "/img/KSZKReszort.png",
+        "img": "/img/experience/KSZKReszort.png",
         "title": {
             "en": "Schönherz Dormitory Computer Science Special Interest Group",
             "hu": "Schönherz Kollégiumi Számítástechnikai kör"
@@ -41,7 +41,7 @@
     },
     {
         "id": "Labvez",
-        "img": "/img/vik_logo.jpg",
+        "img": "/img/experience/vik_logo.jpg",
         "title": {
             "en": "BME Faculty of Electrical Engineering and Informatics",
             "hu": "BME Villamosmérnöki és Informatikai Kar"
@@ -64,7 +64,7 @@
     },
     {
         "id": "BigWall",
-        "img": "/img/bigwall.png",
+        "img": "/img/experience/bigwall.png",
         "title": {
             "en": "BigWall Climbing Gym",
             "hu": "BigWall Falmászóklubb"
