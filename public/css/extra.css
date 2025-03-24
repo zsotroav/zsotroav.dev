@@ -238,12 +238,12 @@ h2 {
 
 .card.project-card {
   margin-bottom: 0 !important;
+  flex-direction: column;
+  display: flex;
 }
 
 .card.project-card .card-footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+  margin-top: auto;
 }
 
 ul {

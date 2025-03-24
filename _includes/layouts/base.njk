@@ -65,13 +65,14 @@
 				</div>
 				<div id="navbar" class="navbar-menu">
         			<div class="navbar-start">
-						{%- for entry in collections.all | eleventyNavigation %}
+						{%- set navbar = collections.navbar_visible | navbar | eleventyNavigation %}
+						{%- for entry in navbar  %}
 							<a class="navbar-item" href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a>
 						{%- endfor %}
 					</div>
         			<div class="navbar-end">
-						{% set langlinks = page.url | locale_links %}
-						{%- for link in langlinks %}<a class="button navbar-item mr-2" href="{{link.url}}" lang="{{link.lang}}" hreflang="{{link.lang}}">{{link.lang}}</a>{%- endfor -%}
+						{% set langlinks = page | inOtherLangs %}
+						{%- for link in langlinks %}<a class="button navbar-item mr-2" href="{{link.url}}" lang="{{link.page.lang}}" hreflang="{{link.page.lang}}">{{link.page.lang}}</a>{%- endfor -%}
 						<a class="button navbar-item mr-2" onClick="window.changeTheme()"> <i class="fas fa-sun dark-only"></i> <i class="fas fa-moon light-only"></i><a>
 					</div>
 				</div>

@@ -1,0 +1,21 @@
+---
+layout: layouts/base.njk
+---
+
+<section class="hero is-halfheight">
+  <div class="container hero-body">
+    <div class="column">
+        <p class="is-family-monospaced is-size-1 title">{{ title }}</p>
+        {%- if short %}<p class=" is-size-4 sub-title">{{ short }}</p> {%- endif %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+
+    {{ content | safe }}
+
+  </div>
+</container>
+

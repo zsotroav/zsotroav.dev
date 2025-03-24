@@ -1,5 +1,5 @@
-{% set projectslist = collections.projects | head(-6) %}
-{% set projectslistCounter = projectsCount %}
+{%- if not projectslist %} {%- set projectslist = collections.projects | head(-6) %} {%- endif %}
+{%- set projectslistCounter = projectsCount %}
 
 <div class="flexgrid projectslist my-5">
 {%- for proj in projectslist %}
@@ -21,8 +21,7 @@
 			<p class="title is-4">{{proj.data.title}}</p>
 			<p class="subtitle is-6"><time datetime="{{ proj.data.date | htmlDateString }}">{{ proj.data.date | readableDate }}</time></p>
 		</div>
-
-		{{proj.data.short}}
+		<p>{{proj.data.short}}</p>
 	</div>
 	<footer class="card-footer">
 		<a href="{{proj.url}}" class="card-footer-item">{{strings.projlist_read[page.lang]}}</a>

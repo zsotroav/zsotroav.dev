@@ -1,0 +1,23 @@
+---js
+// <script>
+const pagination = {
+	data: "collections",
+	size: 1,
+	alias: "tag",
+	filter: ["all", "projects"],
+	// addAllPagesToCollections: true,
+};
+
+const eleventyExcludeFromCollections = true;
+
+const eleventyComputed = {
+	title: "'{{ tag }}' címkés projektek",
+	permalink: function(data) {
+		return `/hu/projects/tags/${this.slugify(data.tag)}/`;
+	},
+    layout: "layouts/generic.njk"
+};
+---
+
+{% set projectslist = collections[ tag ] %}
+{% include "components/projectlist.njk" %}

@@ -21,7 +21,7 @@ layout: layouts/base.njk
             </button></p>
           {%- endif %}
           {%- for tag in tags | filterTagList %}
-            {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
+            {%- set tagUrl %}/{{page.lang}}/projects/tags/{{ tag | slugify }}/{% endset %}
             <p class="control">
               <button class="button is-link"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></button>
             </p>
