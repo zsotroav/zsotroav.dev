@@ -1,0 +1,28 @@
+---
+permalink: index.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting... - zsotroav.dev</title>
+
+    <script>
+        var userLang = navigator.language || navigator.userLanguage;
+        var i18n = {
+            'hu': './hu/',
+        };
+        var defaultUrl = './en/';
+
+        var url = i18n[userLang] ?? defaultUrl;
+        console.log(url);
+
+        window.location.href = url;
+    </script>
+</head>
+<body>
+    Redirecting...
+</body>
+</html>
