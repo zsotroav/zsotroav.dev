@@ -1,5 +1,15 @@
 ---
 permalink: 404.html
 eleventyExcludeFromCollections: true
+layout: layouts/base.njk
 ---
-404: Not found
+
+<section class="hero is-halfheight">
+  <div class="container hero-body center">
+    <h1 class="has-text-centered is-size-1 w-100">404: Not found</h1>
+
+    <button class="button centered is-dark" onclick="window.location.href = '/'">
+      ← Go back to the home page
+    </button>
+  </div>
+</section>
