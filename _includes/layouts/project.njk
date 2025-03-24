@@ -15,6 +15,11 @@ layout: layouts/base.njk
               <span class="icon"><i class="fab fa-github"></i></span>
             </button></p>
           {%- endif %}
+          {%- if extref %}
+            <p class="control"><button class="button is-dark" onclick="window.open('{{extref}}', '_blank').focus()">
+              <span class="icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+            </button></p>
+          {%- endif %}
           {%- for tag in tags | filterTagList %}
             {%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %}
             <p class="control">

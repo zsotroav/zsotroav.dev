@@ -9,9 +9,17 @@
     "home": true
   },
   {
+    "text": "Email",
+    "icon": "fa-solid fa-envelope",
+    "url": "mailto:hello@zsotroav.dev",
+    "btnColor": "is-link",
+    "home": true,
+    "footer": true
+  },
+  {
     "text": "GitHub",
     "url": "https://github.com/zsotroav",
-    "icon": "fa-github",
+    "icon": "fab fa-github",
     "btnColor": "is-dark",
     "home": true,
     "footer": true
@@ -19,7 +27,7 @@
   {
     "text": "LinkedIn",
     "url": "https://www.linkedin.com/in/zsombor-torok/",
-    "icon": "fa-linkedin",
+    "icon": "fab fa-linkedin",
     "btnColor": "is-linkedin",
     "home": true,
     "footer": true

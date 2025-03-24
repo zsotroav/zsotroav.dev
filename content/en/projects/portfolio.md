@@ -1,6 +1,6 @@
 ---
 title: Portfolio website
-short: A fully custom made portfolio website made with 11ty
+short: A fully custom portfolio website made with 11ty
 source: https://github.com/zsotroav/zsotroav.dev
 extref: https://zsotroav.dev/
 date: 2025-02-13

@@ -25,7 +25,7 @@ layout: layouts/base.njk
               <button class="button {{entry.btnColor}}" 
                 {% if entry.url %} onclick="window.open('{{entry.url}}', '_blank').focus()" {% else %} disabled {% endif %}
               >
-                {% if entry.icon %} <span class="icon"><i class="fab {{entry.icon}}"></i></span> {% endif %}
+                {% if entry.icon %} <span class="icon"><i class="{{entry.icon}}"></i></span> {% endif %}
                 {% if entry.text %} 
                   {% if entry.i18n[page.lang] %}
                     <span>{{entry.i18n[page.lang]}}</span>
