@@ -4,7 +4,7 @@ short: A Tetris-like game running natively on a FOK-GYEM flipdot's custom arduin
 img: /img/projects/fok-gyem-tetris/OE-Researchers.jpg
 source: https://github.com/zsotroav/FOK-GYEM-Tetris-native
 date: 2024-09-27
-tags: [Arduino, C++]
+tags: [FOK-GYEM, Arduino, C++]
 ---
 
 ## Intro
