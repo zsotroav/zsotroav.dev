@@ -3,7 +3,7 @@ title: FOK-GYEM Tetris
 short: A Tetris-like game running natively on a FOK-GYEM flipdot's custom arduino controller. Displayed at the 2024 researcher's night in Óbuda University.
 img: /img/projects/fok-gyem-tetris/OE-Researchers.jpg
 source: https://github.com/zsotroav/FOK-GYEM-Tetris-native
-date: 2024-10-14
+date: 2024-09-27
 tags: [Arduino, C++]
 ---
 

@@ -3,7 +3,7 @@ title: FOK-GYEM Tetris
 short: Egy Tetris-jellegű játék ami natívan fut FOK-GYEM kijelzőkhöz gyártott, egyedi, arduino alapú vezérlőn. Bemutatva a 2024-es Kutatók éjszakáján az Óbudai Egyetemen.
 img: /img/projects/fok-gyem-tetris/OE-Researchers.jpg
 source: https://github.com/zsotroav/FOK-GYEM-Tetris-native
-date: 2024-10-14
+date: 2024-09-27
 tags: [Arduino, C++]
 ---
 
