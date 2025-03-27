@@ -27,6 +27,7 @@
 	},
 	"dependencies": {
 		"@zachleat/heading-anchors": "^1.0.1",
+		"limax": "^4.1.0",
 		"typer-js": "^5.5.2"
 	}
 }

@@ -1,4 +1,5 @@
 import { DateTime } from "luxon";
+import slug from "limax";
 
 export default function(eleventyConfig) {
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {
@@ -9,6 +10,11 @@ export default function(eleventyConfig) {
 	eleventyConfig.addFilter("htmlDateString", (dateObj) => {
 		// dateObj input: https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
 		return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat('yyyy-LL-dd');
+	});
+
+	// Overwrite the built-in `slugify` filter.
+	eleventyConfig.addFilter("slugify", (val) => {
+		return slug(val, { custom: {'+': 'plus'} });
 	});
 
 	// Get the first `n` elements of a collection.
