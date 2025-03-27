@@ -1,4 +1,16 @@
 {
+    "change_lang": {
+        "en": "Change to English",
+        "hu": "Váltás Magyarra"
+    },
+    "change_light" : {
+        "en": "Change to light mode",
+        "hu": "Váltás világos módra"
+    },
+    "change_dark" : {
+        "en": "Change to dark mode",
+        "hu": "Váltás sötét módra"
+    },
     "home_hi": {
         "en": "Hi, I am Zsombor,",
         "hu": "Zsombor vagyok,"

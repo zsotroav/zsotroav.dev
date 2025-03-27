@@ -105,6 +105,11 @@ h2 {
   margin-right: auto;
 }
 
+.ms-y-2 {
+  margin-top: .5rem!important;
+  margin-bottom: .5rem!important;
+}
+
 .visually-hidden {
   position: absolute;
   left: -9999px;
