@@ -8,7 +8,7 @@ tags: [Arduino, C++]
 ---
 
 ## Intro
-FOK-GYEM VISINFORM is a brand of electro-mechanical
+FOK-GYEM VISINFORM was a brand of electro-mechanical
 [flip-dot](https://en.wikipedia.org/wiki/Flip-disc_display) display. Their
 working principle is simple: An electromagnet forces a small, magnetized
 "pixel" to flip from the black-painted side to the other, usually white- or
@@ -16,7 +16,7 @@ yellow-painted side.
 
 A while ago, I managed to get my hands on a few 7x24 pixel modules for which we
 were able to create a custom controller board with a few friends. One of our
-first ideas, apart from running [Bad Apple!!](./fok-gyem-bad-apple) on it, was
+first ideas, apart from running Doom and [Bad Apple!!](./fok-gyem-bad-apple) on it, was
 to play Tetris on it. This made exactly that possible.
 
 ![](/img/projects/fok-gyem-tetris/testing.jpg) <br /> *Testing the game on final
@@ -44,9 +44,9 @@ at Kelenföld Bus Garage; Tetris showcased on the right.*
 
 ## Details
 This project consists of the Tetris game code and a physical controller. [Tetris
-itself](https://github.com/zsotroav/FOK-GYEM-Tetris-native) is made in C++, while
-the [driver for the board](https://github.com/zsotroav/FOK-GYEM) is written in
-C. 
+itself](https://github.com/zsotroav/FOK-GYEM-Tetris-native) is made in C++,
+while the [driver for the board](https://github.com/zsotroav/FOK-GYEM) (which
+was not changed much for this project) is written in C. 
 
 The hardware side of the project is also simple: Our existing custom driver
 boards were used. The controller keypad consists of basic microswitches wired
@@ -56,6 +56,6 @@ directly to the Arduino's GPIO pins.
 to the Arduino through the controller board*
 
 This project's specialty is the multiplatform implementation: The **same code
-base** (except for the platform-specific display parts) can be used to compile
+base** (except for the platform-specific IO parts) can be used to compile
 the game for **both an Arduino** with a FOK-GYEM driver hat **and a PC** running
-Windows or Linux. See the readme in the project files for more details.
+Windows or Linux. See the README in the project files for more details.
