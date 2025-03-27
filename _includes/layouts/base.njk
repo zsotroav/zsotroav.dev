@@ -74,14 +74,17 @@
 						{% set langlinks = page | inOtherLangs %}
 						{%- for link in langlinks %}
 							<a class="button navbar-item mr-2 ms-y-2" lang="{{link.page.lang}}"
-							   href="{{link.url}}" hreflang="{{link.page.lang}}">
+							   href="{{link.url}}" hreflang="{{link.page.lang}}"
+							   title="{{strings.change_lang[link.page.lang]}}">
 							   <span class="is-hidden-desktop">{{strings.change_lang[link.page.lang]}}</span>
 							   <span class="is-hidden-touch">{{link.page.lang}}</span>
 							</a>
 						{%- endfor -%}
-						<a class="button navbar-item mr-2 ms-y-2" onClick="window.changeTheme()"> 
-							<i class="fas fa-sun dark-only"></i> <span class="is-hidden-desktop dark-only">{{strings.change_light[page.lang]}}</span> 
-							<i class="fas fa-moon light-only"></i> <span class="is-hidden-desktop light-only">{{strings.change_dark[page.lang]}}</span>
+						<a class="button navbar-item mr-2 ms-y-2 dark-only" onClick="window.changeTheme()" title="{{strings.change_light[page.lang]}}"> 
+							<i class="fas fa-sun"></i> <span class="is-hidden-desktop">{{strings.change_light[page.lang]}}</span> 
+						</a>
+						<a class="button navbar-item mr-2 ms-y-2 light-only" onClick="window.changeTheme()" title="{{strings.change_dark[page.lang]}}"> 
+							<i class="fas fa-moon"></i> <span class="is-hidden-desktop">{{strings.change_dark[page.lang]}}</span>
 						<a>
 					</div>
 				</div>
