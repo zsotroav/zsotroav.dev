@@ -1,0 +1,6 @@
+img { max-height: 60vh; }
+
+.float-r { float: right; }
+.float-l { float: left; }
+
+p:has(img) { text-align: center; }

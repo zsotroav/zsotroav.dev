@@ -18,7 +18,7 @@ layout: layouts/base.njk
       <div class="column is-half">
         <p class="is-family-monospaced is-size-1 title">{{strings.home_hi[page.lang]}}</p>
         <p class="is-size-2 subtitle">&ZeroWidthSpace;<sapn id="whatami"></span></p>
-        <div class="field is-grouped">
+        <div class="field is-grouped flex-wrap">
           
           {%- for entry in links %}{% if entry.home %}
             <p class="control">
