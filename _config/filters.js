@@ -14,6 +14,7 @@ export default function(eleventyConfig) {
 
 	// Overwrite the built-in `slugify` filter.
 	eleventyConfig.addFilter("slugify", (val) => {
+		if (val == 'C#') return 'csharp';
 		return slug(val, { custom: {'+': 'plus'} });
 	});
 

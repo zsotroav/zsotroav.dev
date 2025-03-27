@@ -11,7 +11,7 @@ layout: layouts/base.njk
         <p class="is-family-monospaced is-size-1 title">{{ title }}</p>
         <p class="is-size-4 subtitle"><time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></p>
 
-        <div class="field is-grouped">
+        <div class="field is-grouped flex-wrap">
           {%- if source %}
             <p class="control"><button class="button is-dark" onclick="window.open('{{source}}', '_blank').focus()">
               <span class="icon"><i class="fab fa-github"></i></span>

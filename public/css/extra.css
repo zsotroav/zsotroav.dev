@@ -73,10 +73,17 @@ h2 {
   color: #0a5b92 !important;
 
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.25;
 
   margin-top: 0.5em;
+}
+
+h3 {
+  color: #0a5b92 !important;
+
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .centered {
@@ -131,6 +138,10 @@ h2 {
 }
 
 .flex-wrap { flex-wrap: wrap; }
+
+.is-grouped .control {
+  margin-bottom: 0;
+}
 
 .button.is-linkedin {
   --bulma-button-h: var(--linkedin-h);
@@ -278,3 +289,10 @@ ul {
 
 .links-nextprev-next { margin-left: auto; }
 .links-nextprev-prev { margin-right: auto; }
+
+.yt-video {
+  max-width: 80%;
+  width: 560px; 
+  aspect-ratio: 16/9; 
+  height: auto; 
+}
