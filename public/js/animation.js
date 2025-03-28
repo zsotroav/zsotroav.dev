@@ -8,7 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   
-    const gliders = document.getElementsByClassName("glide-up");
-    for (let i = 0; i < gliders.length; i++) { observer.observe(gliders[i]); }
+    const aniclasses = [ "a-glide-up", "a-ease-in" ];
+
+    aniclasses.forEach(c => {
+      const animated = document.getElementsByClassName(c);
+      for (let i = 0; i < animated.length; i++) { observer.observe(animated[i]); }
+    });
   });
   
