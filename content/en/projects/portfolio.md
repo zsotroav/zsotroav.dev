@@ -7,7 +7,6 @@ date: 2025-02-13
 tags: [webdev]
 ---
 ## Intro
-
 [zsotroav.dev](https://zsotroav.dev) is a custom made portfolio website using
 simple yet powrful technologies. Articles for it (like this one!) are written in
 markdown, and the live site is generated with [11ty](https://11ty.dev), a
