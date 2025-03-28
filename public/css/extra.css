@@ -54,6 +54,17 @@ p {
   font-size: 1.25rem;
 }
 
+.dropdown-item p {
+  margin-bottom: 0;
+  font-size: unset;
+}
+
+.popup-close {
+  float: right;
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+}
+
 li { font-size: 1.25rem; }
 
 strong {
@@ -285,6 +296,10 @@ ul {
   .imgbg {
     min-height: 30vh;
   }
+}
+
+@media screen and (max-width: 1023px) {
+  .dropdown-no-touch { display: unset; }
 }
 
 .links-nextprev-next { margin-left: auto; }

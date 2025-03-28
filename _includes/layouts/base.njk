@@ -35,6 +35,7 @@
 			{% include "public/js/bulma.js"%}
 			
 			{% include "public/js/animation.js"%}
+			{% include "public/js/popup.js"%}
 			{% include "public/js/theme.js"%}
 		{% endjs %}
 	</head>
@@ -73,15 +74,23 @@
 						{%- endfor %}
 					</div>
         			<div class="navbar-end">
-						{% set langlinks = page | inOtherLangs %}
-						{%- for link in langlinks %}
-							<a class="button navbar-item mr-2 ms-y-2" lang="{{link.page.lang}}"
-							   href="{{link.url}}" hreflang="{{link.page.lang}}"
-							   title="{{strings.change_lang[link.page.lang]}}">
-							   <span class="is-hidden-desktop">{{strings.change_lang[link.page.lang]}}</span>
-							   <span class="is-hidden-touch">{{link.page.lang}}</span>
-							</a>
-						{%- endfor -%}
+						<div class="dropdown is-right dropdown-no-touch">
+							{% set langlinks = page | inOtherLangs %}
+							{%- for link in langlinks %}
+								<a class="button navbar-item mr-2 ms-y-2" lang="{{link.page.lang}}"
+								href="{{link.url}}" hreflang="{{link.page.lang}}"
+								title="{{strings.change_lang[link.page.lang]}}">
+								<span class="is-hidden-desktop">{{strings.change_lang[link.page.lang]}}</span>
+								<span class="is-hidden-touch">{{link.page.lang}}</span>
+								</a>
+							{%- endfor -%}
+							<div class="dropdown-menu a-ease-in dropdown-autoshow is-hidden-touch" id="popup-otherlangs" role="menu">
+								<div class="dropdown-content">
+									<div class="dropdown-item popup-close"><a onClick="window.closePopup('popup-otherlangs')"><i class="fa-solid fa-xmark"></i></a></div>
+									<div class="dropdown-item"><p>{{strings.otherlangs[page.lang]}}</p></div>
+								</div>
+							</div>
+						</div>
 						<a class="button navbar-item mr-2 ms-y-2 dark-only" onClick="window.changeTheme()" title="{{strings.change_light[page.lang]}}"> 
 							<i class="fas fa-sun"></i> <span class="is-hidden-desktop">{{strings.change_light[page.lang]}}</span> 
 						</a>
