@@ -57,5 +57,5 @@ Arduinoba a kijelző vezérlőjén keresztül*
 
 Ennek a projektnek a sajátossága a multiplatform implementáció: **Ugyan az a
 kód** (a platform specifikus IO részeket leszámítva) lefordítható mind FOK-GYEM
-vezéről hat-es **Arduinora** és Windows vagy Linux alapú **PC-re is**. További
+vezérlő hat-es **Arduinora** és Windows vagy Linux alapú **PC-re is**. További
 részletek a projekt forrásában lévő README fájlban.

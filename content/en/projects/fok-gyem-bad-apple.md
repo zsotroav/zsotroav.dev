@@ -61,7 +61,7 @@ in the same amount of time. Without the multi-threaded wait-for-all approach, th
 threads could get out of sync, and start developing screen tearing-like
 symptoms.
 
-The final version was run at 28x24 pixels resolution (3 modules x 7x24) at the
+The final version was run at 28x24 pixels resolution (4 modules x 7x24) at the
 original 30 frames/sec speed of Bad Apple!! and only dropped about 60 of the
 total 6570; mostly towards the end of the clip. 
 
