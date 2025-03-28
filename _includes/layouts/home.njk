@@ -20,7 +20,12 @@ layout: layouts/base.njk
           {%- for entry in links %}{% if entry.home %}
             <p class="control">
               <button class="button {{entry.btnColor}}" 
-                {% if entry.url %} onclick="window.open('{{entry.url}}', '_blank').focus()" {% else %} disabled {% endif %}
+                {% if entry.url %} 
+                  onclick="window.open('{{entry.url}}', '_blank').focus()" 
+                {% else %} {% if entry.i20l[page.lang] %} 
+                  onclick="window.open('{{entry.i20l[page.lang]}}', '_blank').focus()" 
+                {% else %} disabled {% endif %}
+                {% endif %}
               >
                 {% if entry.icon %} <span class="icon"><i class="{{entry.icon}}"></i></span> {% endif %}
                 {% if entry.text %} 

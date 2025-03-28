@@ -4,7 +4,10 @@
     "i18n": {
       "hu": "Önéletrajz"
     },
-    "url": "",
+    "i20l": {
+      "hu": "/cv/torok_zsombor_oneletrajz_hu.pdf",
+      "en": "/cv/torok_zsombor_cv_en.pdf"
+    },
     "btnColor": "is-link",
     "home": true
   },

@@ -9,10 +9,10 @@ layout: layouts/home.njk
 ## Intro
 
 I am an active Computer Engineering student at the **Budapest University of
-Technology and Economics**. I have always been interested in technology; I
-started learning programming when I was only 12 years old. I frequently release
-my projects as open-source software on GitHub and help others learn programming
-as a teaching assistant at my university.
+Technology and Economics**. I have always been interested in tech; I started
+learning programming when I was only 12 years old. I frequently release my
+projects as open-source software on GitHub and help others learn programming as
+an educational assistant at my university.
 
 ## Tech stack
 
