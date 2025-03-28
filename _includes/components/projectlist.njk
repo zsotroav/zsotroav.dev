@@ -18,7 +18,7 @@
   	{%- endif %}
 	<div class="card-content">
 		<div class="media-content">
-			<p class="title is-4">{{proj.data.title}}</p>
+			<a class="title is-4" href="{{proj.url}}">{{proj.data.title}}</a>
 			<p class="subtitle is-6"><time datetime="{{ proj.data.date | htmlDateString }}">{{ proj.data.date | readableDate }}</time></p>
 		</div>
 		<p>{{proj.data.short}}</p>

@@ -1,9 +1,6 @@
 [data-theme='light'] {
-  :root {
-    --highlight-col-h: 40;
-    --highlight-col-s: 21%;
-    --highlight-col-l: 95%;
-    --highlight-text-l: 5%;
+  body {
+    --highlight-col: #0a5b92;
   }
 
   .hero {
@@ -18,14 +15,8 @@
 }
 
 [data-theme='dark'] {
-  :root {
-    --bulma-scheme-main: #252526;
-    --bulma-body-color: #fff;
-
-    --highlight-col-h: 204;
-    --highlight-col-s: 100%;
-    --highlight-col-l: 40%;
-    --highlight-text-l: 100%;
+  body {
+    --highlight-col: #0f84d2;
   }
 
   .hero {
@@ -45,8 +36,6 @@
   --linkedin-l: 40%;
   --linkedin-invert-l: 95%;
   --linkedin-color: hsl(var(--linkedin-h), var(--linkedin-s), var(--linkedin-l));
-
-  --highlight-col: hsl(var(--highlight-col-h), var(--highlight-col-s), var(--highlight-col-l));
 }
 
 p {
@@ -68,7 +57,7 @@ p {
 li { font-size: 1.25rem; }
 
 strong {
-  color: hsl(var(--bulma-link-h), var(--bulma-link-s), var(--bulma-link-l)) !important;
+  color: var(--highlight-col) !important;
 }
 
 h1 {
@@ -81,7 +70,7 @@ h1 {
 }
 
 h2 {
-  color: #0a5b92 !important;
+  color: var(--highlight-col) !important;
 
   font-size: 2.5rem;
   font-weight: 500;
@@ -91,7 +80,7 @@ h2 {
 }
 
 h3 {
-  color: #0a5b92 !important;
+  color: var(--highlight-col) !important;
 
   font-size: 1.8rem;
   font-weight: 400;
@@ -171,6 +160,10 @@ h3 {
 
 .is-link a {
   color: white;
+}
+
+.content a {
+  text-decoration: underline;
 }
 
 .hero {

@@ -51,7 +51,7 @@
 				aria-label="main navigation"
 				>
 				<div class="navbar-brand">
-					<a class="navbar-item" href='{{ "/" | locale_url }}'> <img src="{{ '/vec/zs.svg' }}" /> ZSOTROAV</a>
+					<a class="navbar-item" href='{{ "/" | locale_url }}'> <img src="{{ '/vec/zs.svg' }}" alt="logo" /> ZSOTROAV</a>
 
 					<a
 						role="button"
@@ -86,17 +86,17 @@
 							{%- endfor -%}
 							<div class="dropdown-menu a-ease-in dropdown-autoshow is-hidden-touch" id="popup-otherlangs" role="menu">
 								<div class="dropdown-content">
-									<div class="dropdown-item popup-close"><a onClick="window.closePopup('popup-otherlangs')"><i class="fa-solid fa-xmark"></i></a></div>
+									<div class="dropdown-item popup-close"><p role="button" onClick="window.closePopup('popup-otherlangs')"><i class="fa-solid fa-xmark"></i></p></div>
 									<div class="dropdown-item"><p>{{strings.otherlangs[page.lang]}}</p></div>
 								</div>
 							</div>
 						</div>
-						<a class="button navbar-item mr-2 ms-y-2 dark-only" onClick="window.changeTheme()" title="{{strings.change_light[page.lang]}}"> 
+						<p role="button" class="button navbar-item mr-2 ms-y-2 dark-only" onClick="window.changeTheme()" title="{{strings.change_light[page.lang]}}"> 
 							<i class="fas fa-sun"></i> <span class="is-hidden-desktop">{{strings.change_light[page.lang]}}</span> 
-						</a>
-						<a class="button navbar-item mr-2 ms-y-2 light-only" onClick="window.changeTheme()" title="{{strings.change_dark[page.lang]}}"> 
+						</p>
+						<p role="button" class="button navbar-item mr-2 ms-y-2 light-only" onClick="window.changeTheme()" title="{{strings.change_dark[page.lang]}}"> 
 							<i class="fas fa-moon"></i> <span class="is-hidden-desktop">{{strings.change_dark[page.lang]}}</span>
-						<a>
+						<p>
 					</div>
 				</div>
 			</nav>
@@ -122,6 +122,7 @@
 				<p class="control">
 					{%- for entry in links %}{% if entry.footer %}
 						<button class="button {{entry.btnColor}} mx-2" 
+								{% if entry.text %} aria-label="{{entry.text}}" {% endif %}
 								{% if entry.url %} onclick="window.open('{{entry.url}}', '_blank').focus()" {% else %} disabled {% endif %}
 							>
 								{% if entry.icon %} <span class="icon"><i class="{{entry.icon}}"></i></span> {% endif %}
