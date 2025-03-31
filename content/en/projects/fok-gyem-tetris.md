@@ -16,7 +16,7 @@ yellow-painted side.
 
 A while ago, I managed to get my hands on a few 7x24 pixel modules for which we
 were able to create a custom controller board with a few friends. One of our
-first ideas, apart from running Doom and [Bad Apple!!](./fok-gyem-bad-apple) on it, was
+first ideas, apart from running Doom and [Bad Apple!!](../fok-gyem-bad-apple) on it, was
 to play Tetris on it. This made exactly that possible.
 
 ![](/img/projects/fok-gyem-tetris/testing.jpg) <br /> *Testing the game on final

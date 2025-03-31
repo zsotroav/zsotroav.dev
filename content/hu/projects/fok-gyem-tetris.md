@@ -16,7 +16,7 @@ Ezeknek a kijelzőknek nagyon egyszerű a működési elvük: Egy elektromágnes
 
 Korábban sikerült hozzájutnom néhány 7x24 pixeles modulhoz, amikhez néhány
 barátommal sikeresen csináltunk egyedi vezérlő lapokat. Az egyik első ötletünk
-vele, a Doom és a [Bad Apple!!](./fok-gyem-bad-apple) futtatása mellett, az
+vele, a Doom és a [Bad Apple!!](../fok-gyem-bad-apple) futtatása mellett, az
 volt, hogy játszunk Tetrist rajta. Ez a projekt tökéletesen ezt tette lehetővé.
 
 ![](/img/projects/fok-gyem-tetris/testing.jpg) <br /> *A játék tesztelése
