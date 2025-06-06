@@ -58,7 +58,7 @@
                     "hu": "A 2024/25-ös félév két szemeszterében \"A programozás alapjai 1\" (BMEVIEEAA00) és \"A Programozás alapjai 2\" (BMEVIIIAA03) című tárgyak keretében laboratóriumokat tartottam a tárgyak hallgatói számára. Feladatom volt a hallgatók órai labor munkáinak, házi feladatainak értékelése és osztályzása, valamint segíteni nekik a programozás alapjait megtanulni a C és C++ nyelv segítségével"
                 },
                 "from": "2024-09",
-                "to": "2025-07"
+                "to": "2025-06"
             }
         ]
     },
@@ -77,10 +77,24 @@
                 },
 
                 "desc": {
-                    "en": "I helped other climbers with their questions and taught new climbers how to climb and belay safely. I organized and held events and climbing sessions for kids and other small groups of beginners.",
-                    "hu": "Más mászóknak és kezdőknek segítettem a biztonságos mászás és biztosítási technikák megtanulásában és megértésében, valamint a különböző szakmai kérdéseik megválaszolásával. Animátorként több rendezvényt szerveztem gyerekek számára, és kisebb csoportok számára bevezető edzéseket is tartottam."
+                    "en": "I helped other climbers with their questions and taught new climbers how to climb and belay safely.",
+                    "hu": "Más mászóknak és kezdőknek segítettem a biztonságos mászás és biztosítási technikák megtanulásában és megértésében, valamint a különböző szakmai kérdéseik megválaszolásával."
                 },
-                "from": "2022-11"
+                "from": "2022-11",
+                "to": "2024-06"
+            },
+            {
+                "title":{
+                    "en": "Event staff",
+                    "hu": "Rendezvény animátor"
+                },
+
+                "desc": {
+                    "en": "I organized and held events and climbing sessions for kids and other small groups of beginners in the gym and at outdoor installations.",
+                    "hu": "Több rendezvényt és bevezető edzést szerveztem gyerekek és kisebb csoportok számára a mászóteremben és különböző kitelepüléseken."
+                },
+                "from": "2021-09",
+                "to": "2024-11"
             }
         ]
     }
