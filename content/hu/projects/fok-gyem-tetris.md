@@ -39,14 +39,25 @@ professzora, hogy lenne-e kedvem kiállítani ezt náluk, amit szívesen el is
 fogadtam. *Archívált esemény link:
 [app.kutatokejszakaja.hu](https://web.archive.org/web/20250327094120/https://app.kutatokejszakaja.hu/esemenyek/obudai-egyetem-kando-kalman-villamosmernoki-kar/display-show-elektronikus-utastajekoztatas-multja-jelene-es-jovoje)*
 
-![](/img/projects/fok-gyem-tetris/kelenfold_garazs.jpg) <br />* A kijelző
-kiállítás a Kelenföldi buszgarázsban; Tetris kiállítva a jobb oldalon.*
+![](/img/projects/fok-gyem-tetris/obuda25.jpg) <br />*Az én asztalom és a
+kiállított eszközeim a 2025-ös Óbudai Autóbuszgarázs nyíltnapon.*
+
+![](/img/projects/fok-gyem-tetris/kelenfold_garazs.jpg) <br />*A kijelző
+kiállítás a 2024-es Kelenföldi buszgarázs nyíltnapon; Tetris kiállítva a jobb
+oldalon.*
 
 ## Részletek
 Ez a projekt a Tetrisz játék kódja és a fizikai kontrollerből áll. [Tetris
 maga](https://github.com/zsotroav/FOK-GYEM-Tetris-native) C++ nyelven van írva,
 a [vezérlő lap drivere](https://github.com/zsotroav/FOK-GYEM) (ami csak
 minimálisan változott a meglévőhöz képest a projekt keretében) pedig C-ben. 
+
+A játék közel funkció teljes, van lehetőség tetromino gyorsításra, ledobásra,
+tárolásra (cserére), valamint a játék közben az eltűntetett sorok pontozva
+vannak, ami alapján a nehézség (tetromino sebessége) folyamatosan nő. Az elért
+pontszám a játék végén látható és leolvasható, illetve egy egyszerű kezdő menüt
+is tartalmaz. A kijelző méretének ellenére a következő és a tárolt tetromino-k
+is láthatóak a játék közben.
 
 A fizikai része is egyszerű: A meglévő egyedi vezérlőink voltak használva a
 kijelzőhöz, a kontroller pedig csak egyszerű mikrokapcsolókból áll, amik

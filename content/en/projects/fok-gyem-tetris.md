@@ -39,14 +39,23 @@ events, approached me and asked if I was interested in joining their stand, whic
 I gladly accepted. *Archived event link:
 [app.kutatokejszakaja.hu](https://web.archive.org/web/20250327094120/https://app.kutatokejszakaja.hu/esemenyek/obudai-egyetem-kando-kalman-villamosmernoki-kar/display-show-elektronikus-utastajekoztatas-multja-jelene-es-jovoje)*
 
+![](/img/projects/fok-gyem-tetris/obuda25.jpg) <br />*My table and showcased
+items at the display show at Óbuda Bus Garage in 2025.*
+
 ![](/img/projects/fok-gyem-tetris/kelenfold_garazs.jpg) <br />*The display show
-at Kelenföld Bus Garage; Tetris showcased on the right.*
+at Kelenföld Bus Garage in 2024; Tetris showcased on the right.*
 
 ## Details
 This project consists of the Tetris game code and a physical controller. [Tetris
 itself](https://github.com/zsotroav/FOK-GYEM-Tetris-native) is made in C++,
 while the [driver for the board](https://github.com/zsotroav/FOK-GYEM) (which
 was not changed much for this project) is written in C. 
+
+The game is almost feature complete, with the option to accelerate, drop, store
+(swap) tetrominoes, and during the game, the cleared rows award points, which
+increases the difficulty (tetromino speed). The score achieved is displayed at
+the end of the game before the simple starter menu. Despite the size of the
+display, the next and stored tetrominoes are also visible during gameplay.
 
 The hardware side of the project is also simple: Our existing custom driver
 boards were used. The controller keypad consists of basic microswitches wired
