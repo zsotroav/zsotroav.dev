@@ -1,5 +1,22 @@
 [
     {
+        "id": "BKK",
+        "img": "/img/experience/bkk.jpg",
+        "title": {
+            "en": "BKK - Budapesti Közlekedési Központ",
+            "hu": "BKK - Budapesti Közlekedési Központ"
+        },
+        "pos": [
+            {
+                "title": {
+                    "en": "Information Technology Intern",
+                    "hu": "IT Gyakornok"
+                },
+                "from": "2025-07"
+            }
+        ]
+    },
+    {
         "id": "KSZK",
         "img": "/img/experience/KSZKReszort.png",
         "title": {
