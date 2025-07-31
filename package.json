@@ -15,7 +15,7 @@
 		"node": ">=18"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0",
+		"@11ty/eleventy": "^3.1.2",
 		"@11ty/eleventy-img": "^6.0.1",
 		"@11ty/eleventy-navigation": "^0.3.5",
 		"@11ty/eleventy-plugin-rss": "^2.0.2",
@@ -29,5 +29,17 @@
 		"@zachleat/heading-anchors": "^1.0.1",
 		"limax": "^4.1.0",
 		"typer-js": "^5.5.2"
-	}
+	},
+	"main": "eleventy.config.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/zsotroav/zsotroav.dev.git"
+	},
+	"keywords": [],
+	"author": "Zsombor \"zsotroav\" Török",
+	"license": "All rights reserved",
+	"bugs": {
+		"url": "https://github.com/zsotroav/zsotroav.dev/issues"
+	},
+	"homepage": "https://github.com/zsotroav/zsotroav.dev#readme"
 }
