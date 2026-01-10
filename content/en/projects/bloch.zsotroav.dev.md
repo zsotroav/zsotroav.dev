@@ -1,14 +1,14 @@
 ---
 title: Bloch sphere simulator
 short: Simple single-qubit Bloch sphere simulator in your browser.
-img: /img/projects/bloch.zsotroav.dev/thumbnail.jpg
+img: /img/projects/thumb-bloch.jpg
 source: https://github.com/zsotroav/bloch.zsotroav.dev
 extref: https://bloch.zsotroav.dev/
 date: 2025-11-20
 tags: [webdev]
 ---
-## Intro
 
+## Intro
 This project was made as the homework for the [Quantum Computing and its
 Applications](https://portal.vik.bme.hu/kepzes/targyak/VIHIAD00/) course in the
 2025/26/1 semester by
@@ -20,7 +20,6 @@ Applications](https://portal.vik.bme.hu/kepzes/targyak/VIHIAD00/) course in the
 For more information and a detailed documentation, see [https://bloch.zsotroav.dev/docs](https://bloch.zsotroav.dev/docs)
 
 ## Tech stack
-
 Requirements:
 - NodeJS 22
 - npm 10 

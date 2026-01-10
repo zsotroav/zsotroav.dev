@@ -1,12 +1,14 @@
 ---
 title: Portfólió weboldal
 short: Egy egyedileg készített portfólió weboldal, 11ty-vel. 
+img: /img/projects/thumb-portfolio.jpg
 source: https://github.com/zsotroav/zsotroav.dev
 extref: https://zsotroav.dev/
 date: 2025-02-13
 tags: [webdev]
 homeHidden: true
 ---
+
 ## Intro
 [zsotroav.dev](https://zsotroav.dev) egy egyedileg készített portfólió weboldal
 ami egyszerű de mégis erős technológiákkal készült. A bejegyzések (mint ez is)

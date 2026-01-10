@@ -1,12 +1,14 @@
 ---
 title: Portfolio website
 short: A fully custom portfolio website made with 11ty
+img: /img/projects/thumb-portfolio.jpg
 source: https://github.com/zsotroav/zsotroav.dev
 extref: https://zsotroav.dev/
 date: 2025-02-13
 tags: [webdev]
 homeHidden: true
 ---
+
 ## Intro
 [zsotroav.dev](https://zsotroav.dev) is a custom made portfolio website using
 simple yet powrful technologies. Articles for it (like this one!) are written in

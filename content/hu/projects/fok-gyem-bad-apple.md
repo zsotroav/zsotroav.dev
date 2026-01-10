@@ -1,7 +1,7 @@
 ---
 title: Bad Apple!! FOK-GYEM kijelzőn
 short: A Bad Apple!!-t széles körben használják teszt videóként, amit mindenféle eszközön futtatnak, és nekem sikerült egy FOK-GYEM márkájú flip-dot-on lejátszanom. Az erről készült YouTube-videónak már több mint 17000 megtekintése van.
-img: /img/projects/fok-gyem-bad-apple/thumbnail.png
+img: /img/projects/thumb-fok-gyem-bad-apple.png
 extref: https://youtube.com/watch?v=5NXSMdUH_Cg
 date: 2023-08-09
 tags: [FOK-GYEM, Arduino, C++, C#]

@@ -1,7 +1,7 @@
 ---
 title: Bad Apple!! on FOK-GYEM 
 short: Bad Apple has been widely used as a video test to run on all sorts of devices, and I got it running on a FOK-GYEM brand flip-dot and the YouTube video about it now has over 17000 views.
-img: /img/projects/fok-gyem-bad-apple/thumbnail.png
+img: /img/projects/thumb-fok-gyem-bad-apple.png
 extref: https://youtube.com/watch?v=5NXSMdUH_Cg
 date: 2023-08-09
 tags: [FOK-GYEM, Arduino, C++, C#]

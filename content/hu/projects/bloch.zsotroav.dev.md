@@ -1,14 +1,14 @@
 ---
 title: Bloch-gömb szimulátor
 short: Egyszerű, egy kvantum bites Bloch-gömb szimulátor webböngészőben.
-img: /img/projects/bloch.zsotroav.dev/thumbnail.jpg
+img: /img/projects/thumb-bloch.jpg
 source: https://github.com/zsotroav/bloch.zsotroav.dev
 extref: https://bloch.zsotroav.dev/
 date: 2025-11-20
 tags: [webdev]
 ---
-## Intro
 
+## Intro
 Ez a projekt házifeladatként készült a [Kvantuminformatikai alkalmazások]
 (https://portal.vik.bme.hu/kepzes/targyak/VIHIAD00/) tárgyra a 2025/26/1-es
 félévben a csapatunk által:
@@ -20,7 +20,6 @@ félévben a csapatunk által:
 További információk és részletes dokumentáció: [https://bloch.zsotroav.dev/docs](https://bloch.zsotroav.dev/docs)
 
 ## Tech stack
-
 Követelmények:
 - NodeJS 22
 - npm 10
