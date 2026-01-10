@@ -27,6 +27,6 @@ projekt igényeitől és megkötéseitől függően. Az alábbi lista az általa
 
 ## Legújabb projektek
 
-{%- set projectslist = collections.projects | pagelang | homeHidden | head(-3) %} 
+{%- set projectslist = collections.projects | pagelang | homeHidden | head(-6) %} 
 {% include "components/projectlist.njk" %}
 {% include "components/seeallprojects.njk" %}

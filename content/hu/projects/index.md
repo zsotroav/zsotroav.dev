@@ -8,4 +8,5 @@ eleventyNavigation:
 layout: layouts/generic.njk
 ---
 
+{% set projectslist = collections.projects | pagelang | reverse %}
 {% include "components/projectlist.njk" %}

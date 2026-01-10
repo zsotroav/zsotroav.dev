@@ -26,8 +26,8 @@ commonly used** technologies and tools:
 
 {% include "components/experience.njk" %}
 
-## Newest projects
+## Latest projects
 
-{%- set projectslist = collections.projects | pagelang | homeHidden | head(-3) %} 
+{%- set projectslist = collections.projects | pagelang | homeHidden | head(-6) %} 
 {% include "components/projectlist.njk" %}
 {% include "components/seeallprojects.njk" %}

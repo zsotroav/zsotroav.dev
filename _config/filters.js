@@ -36,6 +36,10 @@ export default function(eleventyConfig) {
 		return Object.keys(target);
 	});
 
+	eleventyConfig.addFilter("reverse", function(array) {
+		return array.reverse();
+	});
+
 	eleventyConfig.addFilter("filterTagList", function filterTagList(tags) {
 		return (tags || []).filter(tag => ["all", "projects", "en", "hu"].indexOf(tag) === -1);
 	});
