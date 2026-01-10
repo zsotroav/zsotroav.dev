@@ -19,5 +19,5 @@ const eleventyComputed = {
 };
 ---
 
-{% set projectslist = collections[ tag ] %}
+{% set projectslist = collections[ tag ] | pagelang %}
 {% include "components/projectlist.njk" %}

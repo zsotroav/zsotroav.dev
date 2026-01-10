@@ -25,6 +25,8 @@ projekt igényeitől és megkötéseitől függően. Az alábbi lista az általa
 
 {% include "components/experience.njk" %}
 
-## Projektek
+## Legújabb projektek
 
+{%- set projectslist = collections.projects | pagelang | homeHidden | head(-3) %} 
 {% include "components/projectlist.njk" %}
+{% include "components/seeallprojects.njk" %}

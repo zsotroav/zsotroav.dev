@@ -1,9 +1,8 @@
-{%- if not projectslist %} {%- set projectslist = collections.projects | head(-6) %} {%- endif %}
+{%- if not projectslist %} {%- set projectslist = collections.projects | pagelang %} {%- endif %}
 {%- set projectslistCounter = projectsCount %}
 
 <div class="flexgrid projectslist my-5">
 {%- for proj in projectslist %}
-{%- if page.lang in proj.data.tags %}
 
 <div class="card cell a-glide-up project-card" id="project-card-{{proj.data.title}}">
 	{%- if proj.data.img %}
@@ -30,6 +29,5 @@
 	</footer>
 </div>
 
-{%- endif %}
 {%- endfor %}
 </div>

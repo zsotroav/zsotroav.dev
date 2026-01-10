@@ -39,6 +39,10 @@
         "en": "",
         "hu": "segítségével."
     },
+    "projlist_see_all_projects": {
+        "en": "See all projects",
+        "hu": "Összes projekt megtekintése"
+    },
     "projlist_read": {
         "en": "Read more",
         "hu": "Elolvasás"

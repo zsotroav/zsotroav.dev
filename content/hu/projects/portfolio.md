@@ -5,6 +5,7 @@ source: https://github.com/zsotroav/zsotroav.dev
 extref: https://zsotroav.dev/
 date: 2025-02-13
 tags: [webdev]
+homeHidden: true
 ---
 ## Intro
 [zsotroav.dev](https://zsotroav.dev) egy egyedileg készített portfólió weboldal

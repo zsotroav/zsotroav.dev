@@ -20,12 +20,8 @@ export default function(eleventyConfig) {
 
 	// Get the first `n` elements of a collection.
 	eleventyConfig.addFilter("head", (array, n) => {
-		if(!Array.isArray(array) || array.length === 0) {
-			return [];
-		}
-		if( n < 0 ) {
-			return array.slice(n);
-		}
+		if(!Array.isArray(array) || array.length === 0) return [];
+		if( n < 0 ) return array.slice(n);
 
 		return array.slice(0, n);
 	});
@@ -54,7 +50,7 @@ export default function(eleventyConfig) {
 		return items.filter(post => post.page.lang === this.page.lang).sort((a, b) => a.order - b.order);
   	});
 
-	  eleventyConfig.addFilter("inOtherLangs", function(page) {
+	eleventyConfig.addFilter("inOtherLangs", function(page) {
 		const items = 
 			this.collections?.all ||
 			this.ctx?.collections?.all ||
@@ -84,6 +80,14 @@ export default function(eleventyConfig) {
 		return filtered;
   	});
 
+	eleventyConfig.addFilter("pagelang", function(collection, lang = this.page.lang) {
+		return collection.filter(post => post.page.lang === lang);
+  	});
+
+	eleventyConfig.addFilter("homeHidden", function(collection) {
+		return collection.filter(post => !post.data.homeHidden);
+  	});
+
 	eleventyConfig.addFilter("getNextOrPreviousProject", function(currentProject, direction = "next") {
 		const projects = 
 			this.collections?.projects ||
@@ -102,5 +106,5 @@ export default function(eleventyConfig) {
 		else if (direction === "previous") re = prepped[currentIndex - 1] || null; 
 
 		return re;
-  });
+  	});
 };
