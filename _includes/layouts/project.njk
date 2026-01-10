@@ -13,19 +13,19 @@ layout: layouts/base.njk
 
         <div class="field is-grouped flex-wrap">
           {%- if source %}
-            <p class="control"><button title="{{strings.projlist_source[page.lang]}} (GitHub)" class="button is-dark" onclick="window.open('{{source}}', '_blank').focus()">
+            <p class="control"><a title="{{strings.projlist_source[page.lang]}} (GitHub)" class="button is-dark" href='{{source}}' target="_blank" rel="noopener">
               <span class="icon"><i class="fab fa-github"></i></span>
-            </button></p>
+            </a></p>
           {%- endif %}
           {%- if extref %}
-            <p class="control"><button title="{{strings.projlist_ref[page.lang]}}" class="button is-dark" onclick="window.open('{{extref}}', '_blank').focus()">
+            <p class="control"><a title="{{strings.projlist_ref[page.lang]}}" class="button is-dark" href='{{extref}}' target="_blank" rel="noopener">
               <span class="icon"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-            </button></p>
+            </a></p>
           {%- endif %}
           {%- for tag in tags | filterTagList %}
             {%- set tagUrl %}/{{page.lang}}/projects/tags/{{ tag | slugify }}/{% endset %}
             
-              <div class="control button is-link"><a href="{{ tagUrl }}" class="post-tag">{{ tag }}</a></div>
+              <a href="{{ tagUrl }}" class="control button is-link post-tag">{{ tag }}</a>
           {%- endfor %}
 
         </div>
@@ -53,5 +53,5 @@ layout: layouts/base.njk
     {{ content | safe }}
 
   </div>
-</container>
+</section>
 

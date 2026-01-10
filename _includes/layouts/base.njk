@@ -109,7 +109,7 @@
 		</main>
 
 		<footer class="footer">
-			<div class="content has-text-centered">
+			<div class="has-text-centered">
 				<p>{{strings.footer_copyright[page.lang]}}</p>
 				<p> {{strings.footer_made[page.lang]}}
 					<a href="https://11ty.dev">11ty</a>,
@@ -121,12 +121,12 @@
 				</p>
 				<p class="control">
 					{%- for entry in links %}{% if entry.footer %}
-						<button class="button {{entry.btnColor}} mx-2" 
+						<a class="button {{entry.btnColor}} mx-2 " 
 								{% if entry.text %} aria-label="{{entry.text}}" {% endif %}
-								{% if entry.url %} onclick="window.open('{{entry.url}}', '_blank').focus()" {% else %} disabled {% endif %}
+								{% if entry.url %} href="{{entry.url}}" target="_blank" rel="noopener" {% else %} disabled {% endif %}
 							>
 								{% if entry.icon %} <span class="icon"><i class="{{entry.icon}}"></i></span> {% endif %}
-						</button>
+						</a>
 					{% endif %}{%- endfor %}
 				</p>
 			</div>

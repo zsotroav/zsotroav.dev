@@ -19,11 +19,11 @@ layout: layouts/base.njk
           
           {%- for entry in links %}{% if entry.home %}
             <p class="control">
-              <button class="button {{entry.btnColor}}" 
+              <a class="button {{entry.btnColor}}" 
                 {% if entry.url %} 
-                  onclick="window.open('{{entry.url}}', '_blank').focus()" 
+                  href="{{entry.url}}" target="_blank" rel="noopener"
                 {% else %} {% if entry.i20l[page.lang] %} 
-                  onclick="window.open('{{entry.i20l[page.lang]}}', '_blank').focus()" 
+                  href="{{entry.i20l[page.lang]}}" target="_blank" rel="noopener"
                 {% else %} disabled {% endif %}
                 {% endif %}
               >
@@ -35,7 +35,7 @@ layout: layouts/base.njk
                     <span>{{entry.text}}</span>
                   {% endif %}
                 {% endif %}
-              </button>
+              </a>
             </p>
           {% endif %}{%- endfor %}
 
