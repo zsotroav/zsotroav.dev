@@ -12,6 +12,10 @@
                     "en": "Information Technology Intern",
                     "hu": "IT Gyakornok"
                 },
+                "desc": {
+                    "en": "As an IT intern at BKK, I worked in the software automation team, where I was responsible for developing and maintaining internal tools that streamline various processes within the organization.",
+                    "hu": "IT gyakornokként a BKK-nál a szoftver automatizálási csapatban dolgoztam, ahol belső eszközök fejlesztéséért és karbantartásáért voltam felelős, amelyek különböző folyamatokat egyszerűsítenek a szervezeten belül."
+                },
                 "from": "2025-07"
             }
         ]
@@ -29,7 +33,6 @@
                     "en": "Students' Knowledgebase - Group leader",
                     "hu": "Hallgatói Tudásbázis Körvezető"
                 },
-
                 "desc": {
                     "en": "As the team leader for a self-organized student group, I was responsible for holding frequent meetings, knowledge transfers, and workshops amongst other administrative and professional tasks.",
                     "hu": "Egy öntevékeny kör körvezetőként az én feladatom volt a rendszeres gyűlések, tudás átadás, és workshop események tartása több adminisztratív és szakmai feladat mellett."
@@ -71,11 +74,10 @@
                 },
 
                 "desc": {
-                    "en": "During the two semesters of 2024/25, I held laboratories for students of the \"Basics of Programming 1\" (course code: BMEVIEEAA00) and \"Basics of Programming 2\" (BMEVIIIAA03) courses. I was responsible for grading the lab- and homework of a group of students and helping them learn the basics of programming using the C and C++ languages.",
-                    "hu": "A 2024/25-ös félév két szemeszterében \"A programozás alapjai 1\" (BMEVIEEAA00) és \"A Programozás alapjai 2\" (BMEVIIIAA03) című tárgyak keretében laboratóriumokat tartottam a tárgyak hallgatói számára. Feladatom volt a hallgatók órai labor munkáinak, házi feladatainak értékelése és osztályzása, valamint segíteni nekik a programozás alapjait megtanulni a C és C++ nyelv segítségével"
+                    "en": "I held classes for students of the \"Basics of Programming 1\" (course code: BMEVIEEAA00) and \"Basics of Programming 2\" (BMEVIIIAA03) courses. I was responsible for grading the lab- and homework of groups of students and helping them learn the basics of programming using the C and C++ languages. I held laboratories for students of both courses and practical lessons with a black board from BoP 1. I was responsible for grading the lab- and homework of a group of students and helping them learn the basics of programming using the C and C++ languages.",
+                    "hu": "A \"Programozás alapjai 1\" (kurzus kód: BMEVIEEAA00) és a \"Programozás alapjai 2\" (BMEVIIIAA03) kurzusok hallgatóinak tartottam órákat. Feladatom volt a hallgatói csoportok laboratóriumi és házi feladatait értékelni, valamint segíteni nekik a C és C++ nyelvek használatával a programozás alapjainak elsajátításában. Laboratóriumi foglalkozásokat tartottam mindkét kurzus hallgatói számára, valamint gyakorlati órákat is a prog 1 tárgy esetében, kráta táblánál."
                 },
-                "from": "2024-09",
-                "to": "2025-06"
+                "from": "2024-09"
             }
         ]
     },
