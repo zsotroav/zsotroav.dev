@@ -28,6 +28,6 @@ commonly used** technologies and tools:
 
 ## Latest projects
 
-{%- set projectslist = collections.projects | pagelang | homeHidden | head(-6) %} 
+{%- set projectslist = collections.projects | pagelang | homeHidden | head(-6) | reverse %} 
 {% include "components/projectlist.njk" %}
 {% include "components/seeallprojects.njk" %}
